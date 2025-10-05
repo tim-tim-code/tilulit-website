@@ -37,15 +37,15 @@ export function Process() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {steps.map((step, index) => (
-              <div key={step.number} className="relative">
-                <div className="text-center p-6 rounded-2xl bg-gradient-to-br from-violet-50 to-purple-50 hover:shadow-md transition-all">
+              <div key={step.number} className="relative h-full">
+                <div className="text-center p-6 rounded-2xl bg-gradient-to-br from-violet-50 to-purple-50 hover:shadow-md transition-all h-full flex flex-col">
                   <div className="text-4xl font-heading font-bold text-primary mb-3">
                     {step.number}
                   </div>
                   <h3 className="font-heading text-lg font-semibold mb-2">
                     {step.title}
                   </h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed">
+                  <p className="text-muted-foreground text-sm leading-relaxed flex-1">
                     {step.description}
                   </p>
                 </div>

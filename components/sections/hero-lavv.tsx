@@ -51,6 +51,15 @@ export function HeroLavv() {
               <h1 className="font-heading text-4xl md:text-5xl font-bold mb-4 leading-tight">
                 Tilulit — Digitalagentur für Web & IT
               </h1>
+              <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
+                Wir entwickeln moderne Webseiten und digitale Lösungen, die dein Business voranbringen.
+              </p>
+              <Link href="#kontakt">
+                <Button size="lg" className="group">
+                  Kostenlose Beratung
+                  <ArrowRight className="ml-2 w-5 h-5 transition-transform group-hover:translate-x-1" />
+                </Button>
+              </Link>
             </div>
 
             {/* Right: Stats */}
