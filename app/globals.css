@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Warm Modern Minimalism */
+    --background: 30 20% 97%; /* #F8F7F4 */
+    --background-alt: 30 25% 94%; /* #F3EEE7 */
+    --foreground: 20 5% 11%; /* #1C1B1A */
+    --card: 0 0% 100%;
+    --card-foreground: 20 5% 11%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 20 5% 11%;
+    --primary: 258 90% 66%; /* #A78BFA - Violett Akzent */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 20 25% 82%; /* #D7C9C0 - Rosé-Beige */
+    --secondary-foreground: 20 5% 11%;
+    --muted: 30 20% 92%;
+    --muted-foreground: 20 5% 40%;
+    --accent: 258 90% 66%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 30 15% 88%;
+    --input: 30 15% 88%;
+    --ring: 258 90% 66%;
+    --radius: 1rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+}
+
+/* Warm Modern Utilities */
+@layer utilities {
+  .bg-warm {
+    background-color: #F8F7F4;
+  }
+
+  .bg-warm-alt {
+    background-color: #F3EEE7;
+  }
+
+  .bg-warm-light {
+    background-color: #E6E1DC;
+  }
+
+  .soft-shadow {
+    box-shadow: 0 2px 8px rgba(28, 27, 26, 0.08);
+  }
+
+  .soft-shadow-lg {
+    box-shadow: 0 4px 16px rgba(28, 27, 26, 0.12);
+  }
+}
